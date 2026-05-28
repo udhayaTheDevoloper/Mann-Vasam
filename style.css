@@ -873,11 +873,10 @@
                 justify-content: space-between;
             }
 
-           .nav-link::after {
+            .nav-link::after {
                 display: none;
 
             }
-
 
             .nav-link:hover::after {
                 width: 25%;
