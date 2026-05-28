@@ -18,7 +18,11 @@
             box-sizing: border-box;
         }
 
-
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
 
         html {
             scroll-behavior: smooth;
@@ -26,11 +30,12 @@
         }
 
         body {
+
             font-family: 'Inter', sans-serif;
             color: var(--text-dark);
             background: var(--white);
-            overflow-x: hidden;
-            background-image: ₹ radial-gradient(circle at top left, rgba(224, 122, 47, 0.04), transparent 30%),
+            overflow-x: clip;
+            background-image: radial-gradient(circle at top left, rgba(224, 122, 47, 0.04), transparent 30%),
                 radial-gradient(circle at bottom right, rgba(76, 124, 89, 0.05), transparent 25%);
         }
 
@@ -865,10 +870,9 @@
             }
 
             .navbar>.container {
-                justify-content: space-between;
+                justify-content: center;
+                gap: 20px;
             }
-
-
 
             .nav-link::after {
                 left: 105px;
