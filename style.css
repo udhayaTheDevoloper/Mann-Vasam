@@ -870,12 +870,11 @@
             }
 
             .navbar>.container {
-                  justify-content: space-between;
-            
+                justify-content: space-between;
             }
 
             .nav-link::after {
-                left: 105px;
+                left: 95px;
 
             }
 
